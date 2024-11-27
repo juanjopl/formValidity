@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+<div class="success-state" id="success">
+  <div class="sucess-row">
+    <div class="success-group">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(10.66667,10.66667)"><path d="M12,2c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c5.511,0 10,-4.489 10,-10c0,-5.511 -4.489,-10 -10,-10zM12,4c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8zM16.29297,8.29297l-6.29297,6.29297l-2.29297,-2.29297l-1.41406,1.41406l3.70703,3.70703l7.70703,-7.70703z"></path></g></g>
+      </svg>
+      <p>Message Sent!</p>
+    </div>
+
+    <div class="success-group">
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <form action="#" id="form" class="form">
+    <h1>Contact Us</h1>
+  
+    <div class="formRow">
+      <div class="formGroup">
+        <label for="firstname">First Name <span class="asterisk">*</span></label>
+        <input type="text" name="firtsname" id="firstname">
+        <span id="fnerror" class="error"></span>
+      </div>
+  
+      <div class="formGroup">
+        <label for="lastname">Last Name <span class="asterisk">*</span></label>
+        <input type="text" name="lastname" id="lastname">
+        <span id="lnerror" class="error"></span>
+      </div>
+    </div>
+  
+    <div class="formGroup">
+      <label for="email">Email Address <span class="asterisk">*</span></label>
+      <input type="text" name="email" id="email">
+      <span id="emailerror" class="error"></span>
+    </div>
+  
+    <div class="formGroup">
+      <label for="querytype">Query Type <span class="asterisk">*</span></label>
+      <div class="radioGroup">
+        <div class="radioOption">
+          <input type="radio" id="option1" name="querytype" value="generalenquiry">
+          <label for="general">General Enquiry</label>
+        </div>
+        <div class="radioOption">
+          <input type="radio" id="option2" name="querytype" value="supportequest">
+          <label for="support">Support Request</label>
+        </div>
+      </div>
+      <span id="qterror" class="error"></span>
+    </div>
+  
+    <div class="formGroup">
+      <label for="message">Message <span class="asterisk">*</span></label>
+      <textarea name="message" id="message"></textarea>
+      <span id="messageerror" class="error"></span>
+    </div>
+  
+    <div class="formGroup">
+      <div class="checkGroup">
+        <input type="checkbox" name="consent" id="consent">
+        <label for="consent">I consent to being contacted by the team <span class="asterisk">*</span></label>
+      </div>
+      <span id="consenterror" class="error"></span>
+    </div>
+  
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
